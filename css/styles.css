@@ -31,9 +31,22 @@ html {
   color:black
 }
 
+.grid {
+  display: grid;
+  grid-template-areas: 
+  "nav"
+  "content"
+  "footer";
+  grid-template-columns: auto;
+  grid-template-rows: 90px auto 175px;
+}
+
+
+
 /* Navbar */
 
 header {
+  grid-area: nav;
   background-color: #8A2BE2;
   padding: 5px 5% 0 5%;
   
@@ -67,6 +80,10 @@ li a {
 
 /* Contenido */
 
+.gridContent{
+  grid-area: content;
+}
+
 /* Index */
 
 .bannerSection {
@@ -75,7 +92,7 @@ li a {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  padding: 30px 0;
+  /* padding: 30px 0; */
 }
 
 .bannerArticle {
@@ -125,6 +142,7 @@ li a {
 
 .imgBannerIndex {
   width: 280px;
+  margin-top: 10px;
 }
 
 .cardsSection {
@@ -175,7 +193,7 @@ li a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin:50px 0 90px;
+  margin:30px 0 90px;
 }
 
 .textSectionTitle {
@@ -207,12 +225,11 @@ li a {
   flex-direction: column;
   align-items: flex-start;
   padding: 30px;
-
   border: 1px solid black;
   border-radius: 15px;
   width: 400px;
   height: 380px;
-  margin: 20px;
+  margin: 20px 10px;
 }
 
 .formLabel {
@@ -270,7 +287,7 @@ li a {
   align-items: flex-start;
   padding: 30px;
   margin: 20px 0;
-  width: 400px;
+  width: 380px;
   height: 380px;
 
   border: 1px solid black;
@@ -294,10 +311,16 @@ li a {
 }
 
 .mapSection {
-  margin: 60px;
+  margin: 60px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.iframe {
+  width: 400px;
+  height: 300px;
+  border: 0;
 }
 
 
@@ -305,6 +328,7 @@ li a {
 
 .productImage {
   width: 350px;
+  margin-top: 20px;
 }
 
 .noPaddingBottom {
@@ -352,6 +376,7 @@ h3 {
 /* Pie de pagina */
 
 footer {
+  grid-area: footer;
   background-color: blueviolet;
   color: white;
   display: flex;
@@ -414,4 +439,58 @@ footer {
   width: 25px;
   height: 25px;
   margin: 10px;
+}
+
+.reverseWrap {
+  flex-wrap: wrap-reverse;
+}
+
+@media screen and (min-width: 0px) and (max-width: 380px){
+  .grid{
+    grid-template-columns: auto;
+    grid-template-rows: 200px auto 350px;
+  }
+  
+  header {
+    padding: 0;
+    flex-direction: column ;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .links li {
+    margin-bottom: 5px;
+  }
+
+  .cardsArticleCard {
+    margin: 40px 10px 20px;
+  }
+
+  .imgSobreNosotros {
+    width: 380px;
+  }
+
+  .blogTitle {
+    font-size: 50px;
+  }
+
+  .contactForm {
+    width: 280px;
+  }
+
+  .contactInfo {
+    width: 280px;
+  }
+
+  .iframe {
+    width: 360px;
+  }
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,85 +9,95 @@
     <title>Carpooleo</title>
     <link rel="shortcut icon" href="images/logo.png">
 </head>
+
 <body>
-    <!-- Navbar -->
-    <header>
+    <div class="grid">
+        <!-- Navbar -->
+        <header>
             <a href="index.html"><img src="images/logoCarpooleo.svg" alt="logo" class="logo whiteSvg"></a>
             <nav>
                 <ul class="links">
+                    <li><a href="index.html">Inicio</a></li>
                     <li><a href="pages/sobreNosotros.html">Sobre Nosotros</a></li>
                     <li><a href="pages/producto.html">Producto</a></li>
                     <li><a href="pages/blog.html">Blog</a></li>
                     <li><a href="pages/contacto.html">Contacto</a></li>
                 </ul>
             </nav>
-    </header>
-    
-    
-    <!-- Contenido -->
-    <section class="bannerSection purpleBackground">
-        <article class="bannerArticle">
-            <h2 class="bannerTitle">Una app para facilitar viajes</h2>
-            <p class="bannerText">¿Buscas alguien con quien dividir costos de viaje?</p>
-            <div class="bannerButtons">
-                <a href="pages/sobreNosotros.html"><button class="bannerButton">Leer Mas</button></a>
-                <a href="pages/producto.html"><button class="bannerButton">Descargar App</button></a>
-            </div>
-        </article>
-        <img src="images/appPreview.png" alt="App Preview" class="imgBannerIndex">
-    </section>
+        </header>
 
-    
-    <section class="cardsSection">
-        <article class="cardsArticleCard">
-            <img src="images/cliente.jpeg" alt="imagen cliente" class="imgClient">
-            <p class="cardText">"Aliquam efficitur dui a arcu lobortis tempor. Nunc pretium nulla augue sit amet varius porro."</p>
-            <p class="cardFooter">Bautista Morelli - 24 años</p>
-        </article>
-        <article class="cardsArticleCard">
-            <img src="images/cliente.jpeg" alt="imagen cliente" class="imgClient">
-            <p class="cardText">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci"</p>
-            <p class="cardFooter">Bautista Morelli - 24 años</p>
-        </article>
-        <article class="cardsArticleCard">
-            <img src="images/cliente.jpeg" alt="imagen cliente" class="imgClient">
-            <p class="cardText">"Nullam vitae tempus dolor. Aliquam feugiat vulputate varius. Suspendisse tincidunt lorem non"</p>
-            <p class="cardFooter">Bautista Morelli - 24 años</p>
-        </article>
-    </section>
+        <!-- Contenido -->
+        <div class="gridContent">
+            <section class="bannerSection purpleBackground">
+                <article class="bannerArticle">
+                    <h2 class="bannerTitle">Una app para facilitar viajes</h2>
+                    <p class="bannerText">¿Buscas alguien con quien dividir costos de viaje?</p>
+                    <div class="bannerButtons">
+                        <a href="pages/sobreNosotros.html"><button class="bannerButton">Leer Mas</button></a>
+                        <a href="pages/producto.html"><button class="bannerButton">Descargar App</button></a>
+                    </div>
+                </article>
+                <img src="images/appPreview.png" alt="App Preview" class="imgBannerIndex">
+            </section>
 
-    <section class="textSection">
-        <h2 class="textSectionTitle">Usa Carpooleo para encontrar esa persona que viaja a tu mismo destino y ahorra costos</h2>
-    </section>
 
-    <!-- Pie de pagina -->
-    <footer>
-        <article>
-            <a href=""><img src="images/instagram.svg" alt="Instagram" class="icon whiteSvg"></a>
-            <a href=""><img src="images/youtube.svg" alt="YouTube" class="icon whiteSvg"></a>
-            <a href=""><img src="images/twitter.svg" alt="Twitter" class="icon whiteSvg"></a>
-        </article>
+            <section class="cardsSection">
+                <article class="cardsArticleCard">
+                    <img src="images/cliente.jpeg" alt="imagen cliente" class="imgClient">
+                    <p class="cardText">"Aliquam efficitur dui a arcu lobortis tempor. Nunc pretium nulla augue sit amet
+                        varius porro."</p>
+                    <p class="cardFooter">Bautista Morelli - 24 años</p>
+                </article>
+                <article class="cardsArticleCard">
+                    <img src="images/cliente.jpeg" alt="imagen cliente" class="imgClient">
+                    <p class="cardText">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
+                        adipisci"</p>
+                    <p class="cardFooter">Bautista Morelli - 24 años</p>
+                </article>
+                <article class="cardsArticleCard">
+                    <img src="images/cliente.jpeg" alt="imagen cliente" class="imgClient">
+                    <p class="cardText">"Nullam vitae tempus dolor. Aliquam feugiat vulputate varius. Suspendisse
+                        tincidunt lorem non"</p>
+                    <p class="cardFooter">Bautista Morelli - 24 años</p>
+                </article>
+            </section>
 
-        <section>
-            <ul  class="footerLinks">
-                <li><a href="pages/sobreNosotros.html">Sobre Nosotros</a></li>
-                <li><a href="pages/producto.html">Producto</a></li>
-                <li><a href="pages/blog.html">Blog</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
-            </ul>
-        </section>
-        <section class="newsletter">
-            <p>Suscribite a nuestro Newsletter</p>
-            <input type="email" placeholder="Email...">
-            <button>Suscribite</button>
-        </section>
-        <section class="downloads">
+            <section class="textSection">
+                <h2 class="textSectionTitle">Usa Carpooleo para encontrar esa persona que viaja a tu mismo destino y
+                    ahorra costos</h2>
+            </section>
+        </div>
+
+        <!-- Pie de pagina -->
+        <footer>
             <article>
-                <p>Descarga la app</p>
-                <a href=""><img src="images/googlePlay.svg" alt="" class="downloadApp"></a>
-                <a href=""><img src="images/AppStore.svg" alt="" class="downloadApp"></a>
+                <a href=""><img src="images/instagram.svg" alt="Instagram" class="icon whiteSvg"></a>
+                <a href=""><img src="images/youtube.svg" alt="YouTube" class="icon whiteSvg"></a>
+                <a href=""><img src="images/twitter.svg" alt="Twitter" class="icon whiteSvg"></a>
             </article>
-        </section>
-    </footer>
+
+            <section>
+                <ul class="footerLinks">
+                    <li><a href="pages/sobreNosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="pages/producto.html">Producto</a></li>
+                    <li><a href="pages/blog.html">Blog</a></li>
+                    <li><a href="pages/contacto.html">Contacto</a></li>
+                </ul>
+            </section>
+            <section class="newsletter">
+                <p>Suscribite a nuestro Newsletter</p>
+                <input type="email" placeholder="Email...">
+                <button>Suscribite</button>
+            </section>
+            <section class="downloads">
+                <article>
+                    <p>Descarga la app</p>
+                    <a href=""><img src="images/googlePlay.svg" alt="" class="downloadApp"></a>
+                    <a href=""><img src="images/AppStore.svg" alt="" class="downloadApp"></a>
+                </article>
+            </section>
+        </footer>
+    </div>
 </body>
+
 </html>
