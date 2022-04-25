@@ -31,22 +31,9 @@ html {
   color:black
 }
 
-.grid {
-  display: grid;
-  grid-template-areas: 
-  "nav"
-  "content"
-  "footer";
-  grid-template-columns: auto;
-  grid-template-rows: 90px auto 175px;
-}
-
-
-
 /* Navbar */
 
 header {
-  grid-area: nav;
   background-color: #8A2BE2;
   padding: 5px 5% 0 5%;
   
@@ -79,10 +66,6 @@ li a {
 }
 
 /* Contenido */
-
-.gridContent{
-  grid-area: content;
-}
 
 /* Index */
 
@@ -151,7 +134,6 @@ li a {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-
 }
 
 .cardsArticleCard {
@@ -376,7 +358,6 @@ h3 {
 /* Pie de pagina */
 
 footer {
-  grid-area: footer;
   background-color: blueviolet;
   color: white;
   display: flex;
@@ -446,11 +427,6 @@ footer {
 }
 
 @media screen and (min-width: 0px) and (max-width: 380px){
-  .grid{
-    grid-template-columns: auto;
-    grid-template-rows: 200px auto 350px;
-  }
-  
   header {
     padding: 0;
     flex-direction: column ;
