@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>Carpooleo</title>
     <link rel="shortcut icon" href="images/logo.png">
@@ -35,24 +36,24 @@
                         <a href="pages/producto.html"><button class="bannerButton">Descargar App</button></a>
                     </div>
                 </article>
-                <img src="images/appPreview.png" alt="App Preview" class="imgBannerIndex">
+                <img src="images/appPreview.png" alt="App Preview" class="imgBannerIndex" data-aos="flip-left" data-aos-duration="1000">
             </section>
 
 
-            <section class="cardsSection">
-                <article class="cardsArticleCard">
+            <section class="cardsSection" >
+                <article class="cardsArticleCard" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="1500">
                     <img src="images/cliente.jpeg" alt="imagen cliente" class="imgClient">
                     <p class="cardText">"Aliquam efficitur dui a arcu lobortis tempor. Nunc pretium nulla augue sit amet
                         varius porro."</p>
                     <p class="cardFooter">Bautista Morelli - 24 años</p>
                 </article>
-                <article class="cardsArticleCard">
+                <article class="cardsArticleCard" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="1500">
                     <img src="images/cliente.jpeg" alt="imagen cliente" class="imgClient">
                     <p class="cardText">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
                         adipisci"</p>
                     <p class="cardFooter">Bautista Morelli - 24 años</p>
                 </article>
-                <article class="cardsArticleCard">
+                <article class="cardsArticleCard" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="1500">
                     <img src="images/cliente.jpeg" alt="imagen cliente" class="imgClient">
                     <p class="cardText">"Nullam vitae tempus dolor. Aliquam feugiat vulputate varius. Suspendisse
                         tincidunt lorem non"</p>
@@ -94,6 +95,13 @@
                 </article>
             </section>
         </footer>
+
+        <!-- Animation Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>
