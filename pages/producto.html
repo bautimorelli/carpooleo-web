@@ -12,9 +12,9 @@
     <link rel="shortcut icon" href="../images/logo.png">
 </head>
 
-<body>
+<body class="conteiner-fluid">
         <!-- Navbar -->
-        <header class="sticky-top">
+        <header class="sticky-top col-12">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="../index.html"><img src="../images/logoCarpooleo.svg" alt="logo" class="logo whiteSvg"></a>
@@ -45,30 +45,40 @@
         </header>
 
         <!-- Contenido -->
-            <section class="bannerSection purpleBackground noPaddingBottom">
-                <article class="bannerArticle">
+
+        <div class="alert alert-primary d-flex align-items-center" role="alert">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+                <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </svg>
+            <div>
+                Aplicacion todavia no disponible en Tiendas
+            </div>
+        </div>
+
+            <section class="row purpleBackground noPaddingBottom">
+                <article class="bannerArticle col-sm-12 col-lg-8 ">
                     <h2 class="bannerTitle">Lorem ipsum dolor sit amet, consectetur adipiscing.</h2>
                     <p class="bannerText">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula vulputate tempor.
                         Donec sagittis ornare.</p>
                 </article>
-                <img src="../images/appFrontCrop.png" alt="" class="productImage" data-aos="fade-up" data-aos-duration="1000">
+                <img src="../images/appFrontCrop.png" alt="" class="productImage col-sm-12 col-lg-4 mx-auto" data-aos="fade-up" data-aos-duration="1000">
             </section>
-            <section class="bannerSection noPaddingBottom reverseWrap">
-                <img src="../images/AppViajeCrop.png" alt="" class="productImage" data-aos="fade-up"data-aos-duration="1000">
-                <article class="bannerArticle">
+            <section class="row bannerSection noPaddingBottom reverseWrap">
+                <img src="../images/AppViajeCrop.png" alt="" class="productImage col-sm-12 col-lg-4 mx-auto" data-aos="fade-up"data-aos-duration="1000">
+                <article class="bannerArticle col-sm-12 col-lg-8">
                     <h2 class="bannerTitle blackFont">Lorem ipsum dolor sit amet, consectetur adipiscing.</h2>
                     <p class="bannerText blackFont">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula vulputate tempor.
                         Donec sagittis ornare.</p>
                 </article>
             </section>
-            <section class="bannerSection purpleBackground">
-                <article class="bannerArticle">
+            <section class="row bannerSection purpleBackground">
+                <article class="bannerArticle col-sm-12 col-lg-8">
                     <h2 class="bannerTitle">¿Que estas esperando?</h2>
                     <p class="bannerText">Carpooleo ya esta disponible para descarga</p>
                     <div>
-                        <img src="../images/googlePlay.svg" alt="" class="productDownload">
+                        <img src="../images/googlePlay.svg" alt="" class="productDownload" type="button" class="btn btn-primary" id="liveToastBtn">
                         <img src="../images/AppStore.svg" alt="" class="productDownload">
                     </div>
                 </article>
@@ -77,13 +87,13 @@
 
         <!-- Pie de Pagina -->
         <footer>
-            <article>
-                <a href=""><img src="../images/instagram.svg" alt="Instagram" class="icon whiteSvg"></a>
-                <a href=""><img src="../images/youtube.svg" alt="YouTube" class="icon whiteSvg"></a>
-                <a href=""><img src="../images/twitter.svg" alt="Twitter" class="icon whiteSvg"></a>
+            <article class="flexRowCenter col-sm-12 col-md-6 col-lg-2">
+                <a href=""><img src="../images/instagram.svg" alt="Instagram" class="icon whiteSvg" /></a>
+                <a href=""><img src="../images/youtube.svg" alt="YouTube" class="icon whiteSvg" /></a>
+                <a href=""><img src="../images/twitter.svg" alt="Twitter" class="icon whiteSvg" /></a>
             </article>
 
-            <section>
+            <section class="col-sm-12 col-md-6 col-lg-2">
                 <ul class="footerLinks">
                     <li><a href="sobreNosotros.html">Sobre Nosotros</a></li>
                     <li><a href="producto.html">Producto</a></li>
@@ -91,17 +101,19 @@
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </section>
-            <section class="newsletter">
+            <section class="flexColumnCenter newsletter col-sm-12 col-md-6 col-lg-4">
                 <p>Suscribite a nuestro Newsletter</p>
-                <input type="email" placeholder="Email...">
-                <button>Suscribite</button>
+                <div class="flexRowCenter">
+                    <input type="email" placeholder="Email..." />
+                    <button>Suscribite</button>
+                </div>
             </section>
-            <section class="downloads">
-                <article>
-                    <p>Descarga la app</p>
-                    <a href=""><img src="../images/googlePlay.svg" alt="" class="downloadApp"></a>
-                    <a href=""><img src="../images/AppStore.svg" alt="" class="downloadApp"></a>
-                </article>
+            <section class="flexColumnCenter downloads  col-sm-12 col-md-6 col-lg-4">
+                <p>Descarga la app</p>
+                <div class="flexRowCenter">
+                    <a><img src="../images/googlePlay.svg" alt="" class="downloadApp"/></a>
+                    <a href=""><img src="../images/AppStore.svg" alt="" class="downloadApp" /></a>
+                </div>
             </section>
         </footer>
 

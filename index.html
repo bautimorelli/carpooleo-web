@@ -13,8 +13,8 @@
     <link rel="shortcut icon" href="images/logo.png">
 </head>
 
-<body>
-    <header class="sticky-top">
+<body  class="conteiner-fluid">
+    <header class="sticky-top col-12">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img src="images/logoCarpooleo.svg" alt="logo" class="logo whiteSvg"></a>
@@ -45,8 +45,8 @@
     </header>
 
         <!-- Contenido -->
-            <section class="bannerSection purpleBackground">
-                <article class="bannerArticle">
+            <section class="row bannerSection purpleBackground">
+                <article class="bannerArticle col-sm-12 col-md-6">
                     <h2 class="bannerTitle">Una app para facilitar viajes</h2>
                     <p class="bannerText">¿Buscas alguien con quien dividir costos de viaje?</p>
                     <div class="bannerButtons">
@@ -54,45 +54,55 @@
                         <a href="pages/producto.html"><button class="bannerButton">Descargar App</button></a>
                     </div>
                 </article>
-                <img src="images/appPreview.png" alt="App Preview" class="imgBannerIndex" data-aos="flip-left" data-aos-duration="1000">
+                <img src="images/appPreview.png" alt="App Preview" class="imgBannerIndex col-sm-12 col-md-6" data-aos="flip-left" data-aos-duration="1000">
             </section>
 
 
-            <section class="cardsSection" >
-                <article class="cardsArticleCard" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="1500">
-                    <img src="images/cliente.jpeg" alt="imagen cliente" class="imgClient">
-                    <p class="cardText">"Aliquam efficitur dui a arcu lobortis tempor. Nunc pretium nulla augue sit amet
-                        varius porro."</p>
-                    <p class="cardFooter">Bautista Morelli - 24 años</p>
-                </article>
-                <article class="cardsArticleCard" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="1500">
-                    <img src="images/cliente.jpeg" alt="imagen cliente" class="imgClient">
-                    <p class="cardText">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
-                        adipisci"</p>
-                    <p class="cardFooter">Bautista Morelli - 24 años</p>
-                </article>
-                <article class="cardsArticleCard" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="1500">
-                    <img src="images/cliente.jpeg" alt="imagen cliente" class="imgClient">
-                    <p class="cardText">"Nullam vitae tempus dolor. Aliquam feugiat vulputate varius. Suspendisse
-                        tincidunt lorem non"</p>
-                    <p class="cardFooter">Bautista Morelli - 24 años</p>
-                </article>
+            <section class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="1500">
+                        <img src="images/cliente.jpeg" class="card-img-top imgClient" alt="cliente1">
+                        <div class="card-body">
+                            <p class="card-text">"Aliquam efficitur dui a arcu lobortis tempor. Nunc pretium nulla augue sit amet varius porro."</p>
+                            <h6 class="card-subtitle mb-2 text-muted">Bautista Morelli - 24 años</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="1500">
+                        <img src="images/cliente.jpeg" class="card-img-top imgClient" alt="cliente2">
+                        <div class="card-body">
+                            <p class="card-text">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci"</p>
+                            <h6 class="card-subtitle mb-2 text-muted">Bautista Morelli - 24 años</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="card" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="1500">
+                        <img src="images/cliente.jpeg" class="card-img-top imgClient" alt="cliente3">
+                        <div class="card-body">
+                            <p class="card-text">"Nullam vitae tempus dolor. Aliquam feugiat vulputate varius. Suspendisse tincidunt lorem non"</p>
+                            <h6 class="card-subtitle mb-2 text-muted">Bautista Morelli - 24 años</h6>
+                        </div>
+                    </div>
+                </div>
+            
             </section>
 
-            <section class="textSection">
-                <h2 class="textSectionTitle">Usa Carpooleo para encontrar esa persona que viaja a tu mismo destino y
+            <section class="row textSection">
+                <h2 class="textSectionTitle col-12">Usa Carpooleo para encontrar esa persona que viaja a tu mismo destino y
                     ahorra costos</h2>
             </section>
 
         <!-- Pie de pagina -->
         <footer>
-            <article>
-                <a href=""><img src="images/instagram.svg" alt="Instagram" class="icon whiteSvg"></a>
-                <a href=""><img src="images/youtube.svg" alt="YouTube" class="icon whiteSvg"></a>
-                <a href=""><img src="images/twitter.svg" alt="Twitter" class="icon whiteSvg"></a>
+            <article class="flexRowCenter col-sm-12 col-md-6 col-lg-2">
+                <a href=""><img src="images/instagram.svg" alt="Instagram" class="icon whiteSvg" /></a>
+                <a href=""><img src="images/youtube.svg" alt="YouTube" class="icon whiteSvg" /></a>
+                <a href=""><img src="images/twitter.svg" alt="Twitter" class="icon whiteSvg" /></a>
             </article>
 
-            <section>
+            <section class="col-sm-12 col-md-6 col-lg-2">
                 <ul class="footerLinks">
                     <li><a href="pages/sobreNosotros.html">Sobre Nosotros</a></li>
                     <li><a href="pages/producto.html">Producto</a></li>
@@ -100,17 +110,19 @@
                     <li><a href="pages/contacto.html">Contacto</a></li>
                 </ul>
             </section>
-            <section class="newsletter">
+            <section class="flexColumnCenter newsletter col-sm-12 col-md-6 col-lg-4">
                 <p>Suscribite a nuestro Newsletter</p>
-                <input type="email" placeholder="Email...">
-                <button>Suscribite</button>
+                <div class="flexRowCenter">
+                    <input type="email" placeholder="Email..." />
+                    <button>Suscribite</button>
+                </div>
             </section>
-            <section class="downloads">
-                <article>
-                    <p>Descarga la app</p>
-                    <a href=""><img src="images/googlePlay.svg" alt="" class="downloadApp"></a>
-                    <a href=""><img src="images/AppStore.svg" alt="" class="downloadApp"></a>
-                </article>
+            <section class="flexColumnCenter downloads  col-sm-12 col-md-6 col-lg-4">
+                <p>Descarga la app</p>
+                <div class="flexRowCenter">
+                    <a href=""><img src="images/googlePlay.svg" alt="" class="downloadApp" /></a>
+                    <a href=""><img src="images/AppStore.svg" alt="" class="downloadApp" /></a>
+                </div>
             </section>
         </footer>
 

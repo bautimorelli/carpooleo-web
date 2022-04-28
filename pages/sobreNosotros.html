@@ -11,9 +11,9 @@
     <link rel="shortcut icon" href="../images/logo.png" />
 </head>
 
-<body>
+<body class="conteiner-fluid">
         <!-- Navbar -->
-        <header class="sticky-top">
+        <header class="sticky-top col-12">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="../index.html"><img src="../images/logoCarpooleo.svg" alt="logo" class="logo whiteSvg"></a>
@@ -44,7 +44,7 @@
         </header>
 
         <!-- Contenido -->
-            <section class="textSection">
+            <section class="textSection col-12">
                 <h2 class="textSectionTitle">Somos una app de transporte!</h2>
                 <p class="textSectionText">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
@@ -62,23 +62,45 @@
                 </p>
             </section>
 
+            <div id="carousel" class="carousel slide mb-5 w-75 mx-auto" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../images/carrrusel1.jpg" class="d-block w-100" alt="foto1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/carrusel2.jpg" class="d-block w-100" alt="foto2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/carrusel3.jpg" class="d-block w-100" alt="foto3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
             <section class="bannerSection purpleBackground">
-                <article class="bannerArticle">
+                <article class="bannerArticle col-xs-12 col-sm-12 col-md-6">
                     <h2 class="bannerTitle">No seremos muchos</h2>
                     <p class="bannerText">pero tenemos muchas ganas de crecer</p>
                 </article>
-                <img src="../images/friends.png" alt="Imagen Equipo" class="imgSobreNosotros" />
+                <img src="../images/friends.png" alt="Imagen Equipo" class="imgSobreNosotros col-xs-12 col-sm-12 col-md-6" />
             </section>
 
         <!-- Pie de Pagina -->
         <footer>
-            <article>
+            <article class="flexRowCenter col-sm-12 col-md-6 col-lg-2">
                 <a href=""><img src="../images/instagram.svg" alt="Instagram" class="icon whiteSvg" /></a>
                 <a href=""><img src="../images/youtube.svg" alt="YouTube" class="icon whiteSvg" /></a>
                 <a href=""><img src="../images/twitter.svg" alt="Twitter" class="icon whiteSvg" /></a>
             </article>
 
-            <section>
+            <section class="col-sm-12 col-md-6 col-lg-2">
                 <ul class="footerLinks">
                     <li><a href="sobreNosotros.html">Sobre Nosotros</a></li>
                     <li><a href="producto.html">Producto</a></li>
@@ -86,20 +108,21 @@
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </section>
-            <section class="newsletter">
+            <section class="flexColumnCenter newsletter col-sm-12 col-md-6 col-lg-4">
                 <p>Suscribite a nuestro Newsletter</p>
-                <input type="email" placeholder="Email..." />
-                <button>Suscribite</button>
+                <div class="flexRowCenter">
+                    <input type="email" placeholder="Email..." />
+                    <button>Suscribite</button>
+                </div>
             </section>
-            <section class="downloads">
-                <article>
-                    <p>Descarga la app</p>
+            <section class="flexColumnCenter downloads  col-sm-12 col-md-6 col-lg-4">
+                <p>Descarga la app</p>
+                <div class="flexRowCenter">
                     <a href=""><img src="../images/googlePlay.svg" alt="" class="downloadApp" /></a>
                     <a href=""><img src="../images/AppStore.svg" alt="" class="downloadApp" /></a>
-                </article>
+                </div>
             </section>
         </footer>
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
