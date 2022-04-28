@@ -63,6 +63,10 @@ header {
   margin: 5px;
 }
 
+.navbar-dark .navbar-nav .nav-link{
+  color: white;
+}
+
 /* Contenido */
 
 /* Index */
