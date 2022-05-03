@@ -1,0 +1,387 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"); }
+
+a {
+  color: white;
+  text-decoration: none; }
+
+html {
+  font-family: "Open Sans", sans-serif;
+  background-color: #F9F9FB; }
+
+p {
+  margin: 0; }
+
+.whiteBackground {
+  background-color: white; }
+
+.purpleBackground {
+  background-color: #8A2BE2; }
+
+.whiteSvg {
+  filter: invert(100%) sepia(100%) saturate(0%) brightness(100%) contrast(100%); }
+
+.blackFont {
+  color: black; }
+
+.icon {
+  width: 25px;
+  height: 25px;
+  margin: 10px; }
+
+.reverseWrap {
+  flex-wrap: wrap-reverse; }
+
+.mapSection {
+  margin: 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.iframe {
+  width: 400px;
+  height: 300px;
+  border: 0; }
+
+.socials {
+  justify-content: center; }
+
+.noPaddingBottom {
+  padding-bottom: 0; }
+
+.alignSelfStart {
+  align-self: flex-start; }
+
+.flexRowCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+h3 {
+  font-size: 1.6rem;
+  margin: 10px 0; }
+
+header {
+  background-color: #8A2BE2;
+  padding: 0 5%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px; }
+
+.links {
+  list-style: none; }
+  .links li {
+    display: inline-block;
+    padding: 0 20px; }
+    .links li a {
+      font-size: 1rem;
+      color: white;
+      text-decoration: none; }
+
+.logo {
+  width: 250px; }
+
+.navbar-brand {
+  margin: 0;
+  padding: 0; }
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white; }
+
+footer {
+  background-color: blueviolet;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  flex-wrap: wrap; }
+
+.footerLinks li {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none; }
+
+.newsletter {
+  font-size: 1.2rem; }
+  .newsletter p {
+    margin-bottom: 10px; }
+  .newsletter input {
+    height: 30px;
+    width: 200px;
+    text-indent: 10px;
+    border: none;
+    background-color: white; }
+    .newsletter input:focus {
+      outline: none; }
+  .newsletter button {
+    height: 30px;
+    background-color: white;
+    border: 1px;
+    padding: 0 15px; }
+
+.downloadApp {
+  height: 40px; }
+
+.downloads article p {
+  font-size: 1.2rem;
+  margin: 0 0 15px 0;
+  font-weight: 400; }
+
+.bannerSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.bannerArticle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 80px;
+  max-width: 800px; }
+
+.bannerTitle {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin: 0 5px 10px;
+  text-align: center; }
+
+.bannerText {
+  font-size: 2rem;
+  margin: 10px 5px 30px;
+  text-align: center; }
+
+.bannerButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap; }
+
+.bannerButtonPrimary {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 55px;
+  width: 200px;
+  font-weight: bold; }
+
+.bannerButtonSecondary {
+  background-color: #8A2BE2;
+  color: white;
+  border: solid 3px white;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 55px;
+  width: 200px;
+  font-weight: bold; }
+
+.blogSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 10%; }
+
+.blogTitle {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 10px; }
+
+.blogDescription {
+  font-size: 1.8rem;
+  font-weight: lighter;
+  margin: 10px 0; }
+
+.blogArticle {
+  border-top: 1px solid black;
+  margin: 20px 0; }
+
+.blogArticle p {
+  margin: 10px 0; }
+
+.cardsSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.cardsArticleCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 300px;
+  width: 350px;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  margin: 50px 30px;
+  box-shadow: -1px 2px 4px 1px #CECECE;
+  background-color: white; }
+
+.cardText {
+  font-size: 1.6rem; }
+
+.cardFooter {
+  font-size: 1rem;
+  font-weight: lighter; }
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px;
+  margin: 20px 0;
+  width: 400px;
+  height: 428px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 15px; }
+
+.contactInfoTitle {
+  align-self: center;
+  font-size: 1.6rem;
+  font-weight: 700; }
+
+.contactInfoRow {
+  display: flex;
+  align-items: center;
+  width: 100%; }
+  .contactInfoRow p {
+    margin-left: 10px;
+    font-size: 1rem; }
+
+.formSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 15px;
+  width: 400px;
+  margin: 20px 0; }
+
+.formLabel {
+  font-size: 1.2rem;
+  margin: 5px 0; }
+
+.formInput {
+  height: 32px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid black;
+  text-indent: 5px;
+  font-size: 1rem; }
+  .formInput:focus {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #8A2BE2; }
+
+.formTextarea {
+  width: 100%;
+  resize: none;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  padding: 2px;
+  margin: 10px 0 30px;
+  transition: all 0.3s ease 0s;
+  border: 1px solid black; }
+  .formTextarea:focus {
+    outline: none;
+    border: 1px solid #8A2BE2; }
+
+.formButton {
+  align-self: center;
+  font-size: 1.25rem;
+  color: white;
+  padding: 10px 25px;
+  background-color: #8A2BE2;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s; }
+  .formButton:hover {
+    color: white;
+    background-color: black;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.651);
+    transform: translateY(-2px); }
+
+.textSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0; }
+
+.textSectionTitle {
+  font-size: 2rem;
+  max-width: 50%;
+  text-align: center;
+  font-weight: lighter;
+  margin: 20px; }
+
+.textSectionText {
+  margin: 10px 10%;
+  font-size: 1.2rem;
+  font-weight: lighter; }
+
+.imgClient {
+  vertical-align: middle;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%; }
+
+.imgBannerIndex {
+  width: 280px;
+  margin: 30px 0; }
+
+.productImage {
+  width: 350px;
+  margin-top: 20px; }
+
+.productDownload {
+  height: 70px;
+  margin: 15px; }
+
+.imgSobreNosotros {
+  width: 100%;
+  max-width: 600px; }
+
+@media screen and (min-width: 0px) and (max-width: 380px) {
+  .cardsArticleCard {
+    margin: 40px 10px 20px; }
+  .imgSobreNosotros {
+    width: 380px; }
+  .contactForm {
+    width: 280px; }
+  .contactInfo {
+    width: 280px; }
+  .iframe {
+    width: 360px; } }

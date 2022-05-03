@@ -1,0 +1,21 @@
+.textSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:50px 0;
+}
+
+.textSectionTitle {
+    font-size: 2rem;
+    max-width: 50%;
+    text-align: center;
+    font-weight: lighter;
+    margin: 20px;
+}
+
+.textSectionText {
+    margin: 10px 10%;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}

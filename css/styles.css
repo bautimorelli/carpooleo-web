@@ -215,7 +215,7 @@ header {
 
 /* Contacto */
 
-.contactSection {
+.formSection {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -354,6 +354,13 @@ header {
   margin: 15px;
 }
 
+
+/* Sobre Nosotros */
+.imgSobreNosotros {
+  width: 100%;
+  max-width: 600px;
+}
+
 .alignSelfStart{
   align-self: flex-start;
 }
@@ -474,25 +481,6 @@ footer {
 }
 
 @media screen and (min-width: 0px) and (max-width: 380px){
-  header {
-    padding: 0;
-    flex-direction: column ;
-  }
-
-  .logo {
-    margin: 0;
-  }
-
-  .links{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .links li {
-    margin-bottom: 5px;
-  }
-
   .cardsArticleCard {
     margin: 40px 10px 20px;
   }

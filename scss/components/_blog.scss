@@ -1,0 +1,27 @@
+.blogSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:20px 10%;
+}
+
+.blogTitle {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.blogDescription {
+    font-size: 1.8rem;
+    font-weight: lighter;
+    margin: 10px 0;
+}
+
+.blogArticle {
+    border-top: 1px solid black;
+    margin: 20px 0;
+}
+
+.blogArticle p {
+    margin: 10px 0;
+}

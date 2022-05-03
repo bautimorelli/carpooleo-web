@@ -1,0 +1,28 @@
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+    margin: 20px 0;
+    width: 400px;
+    height: 428px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 15px;
+}
+
+.contactInfoTitle {
+    align-self: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.contactInfoRow {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    p {
+        margin-left: 10px;
+        font-size: 1rem;
+    }
+}

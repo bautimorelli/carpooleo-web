@@ -1,0 +1,33 @@
+.cardsSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cardsArticleCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 300px;
+    width: 350px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    margin: 50px 30px;
+    box-shadow: -1px 2px 4px 1px #CECECE;
+    background-color: white;
+}
+
+.cardText {
+    font-size: 1.6rem;
+}
+
+.cardFooter {
+    font-size: 1rem;
+    font-weight: lighter;
+}

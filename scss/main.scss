@@ -1,5 +1,11 @@
+@import "commons";
 @import "header";
-
-.card {
-    color: white
-}
+@import "footer";
+@import "components/banner";
+@import "components/blog";
+@import "components/card";
+@import "components/contactInfo";
+@import "components/form";
+@import "components/textSection";
+@import "images";
+@import "media";

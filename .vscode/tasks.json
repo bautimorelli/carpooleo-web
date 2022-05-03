@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "watch-css",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: watch-css",
+			"detail": "nodemon -e scss -x \"npm run build-css\""
+		}
+	]
+}
