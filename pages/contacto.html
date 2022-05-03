@@ -1,127 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Bootstrap Stylesheet -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="../css/styles.css" />
+		<title>Contacto</title>
+		<link rel="shortcut icon" href="../images/logo.png" />
+	</head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/styles.css" />
-    <title>Contacto</title>
-    <link rel="shortcut icon" href="../images/logo.png" />
-</head>
+	<body>
+		<!-- Navbar -->
+		<header class="sticky-top">
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="../index.html"
+						><img
+							src="../images/logoCarpooleo.svg"
+							alt="logo"
+							class="logo whiteSvg"
+					/></a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarToggler"
+						aria-controls="navbarTogglerDemo02"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarToggler">
+						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+							<li class="nav-item ms-4">
+								<a
+									class="nav-link"
+									aria-current="page"
+									href="../index.html"
+									>Inicio</a
+								>
+							</li>
+							<li class="nav-item ms-4">
+								<a class="nav-link" href="sobreNosotros.html"
+									>Sobre Nosotros</a
+								>
+							</li>
+							<li class="nav-item ms-4">
+								<a class="nav-link" href="producto.html"
+									>Producto</a
+								>
+							</li>
+							<li class="nav-item ms-4">
+								<a class="nav-link" href="blog.html">Blog</a>
+							</li>
+							<li class="nav-item ms-4">
+								<a class="nav-link" href="contacto.html"
+									>Contacto</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
 
-<body>
-        <!-- Navbar -->
-        <header class="sticky-top">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="../index.html"><img src="../images/logoCarpooleo.svg" alt="logo" class="logo whiteSvg"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarToggler">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item ms-4">
-                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item ms-4">
-                        <a class="nav-link" href="sobreNosotros.html">Sobre Nosotros</a>
-                        </li>
-                        <li class="nav-item ms-4">
-                        <a class="nav-link" href="producto.html">Producto</a>
-                        </li>
-                        <li class="nav-item ms-4">
-                        <a class="nav-link" href="blog.html">Blog</a>
-                        </li>
-                        <li class="nav-item ms-4">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                    </div>
-                </div>
-                </nav>
-        </header>
+		<!-- Content -->
+		<section class="textSection">
+			<h2 class="textSectionTitle">
+				¿Te quedan dudas o queres hablar con nosotros? Completa el
+				formulario y nos pondremos en contacto
+			</h2>
+		</section>
 
-        <!-- Contenido -->
-            <section class="textSection">
-                <h2 class="textSectionTitle">¿Te quedan dudas o queres hablar con nosotros? Completa el formulario y nos
-                    pondremos en contacto</h2>
-            </section>
+		<section class="contactSection">
+			<article>
+				<form action="#">
+					<fieldset class="contactForm whiteBackground">
+						<label for="nombre" class="formLabel"
+							>Nombre y Apellido:
+						</label>
+						<input type="text" class="formInput" />
+						<label for="email" class="formLabel">Email: </label>
+						<input type="email" name="email" class="formInput" />
+						<label for="mensaje" class="formLabel"
+							>Dejanos tu mensaje:
+						</label>
+						<textarea
+							rows="3"
+							name="mensaje"
+							placeholder="Escribe aqui..."
+							class="formTextarea"
+						></textarea>
+						<input
+							type="submit"
+							value="Enviar"
+							class="formButton"
+						/>
+					</fieldset>
+				</form>
+			</article>
 
-            <section class="contactSection">
-                <article>
-                    <form action="#">
-                        <fieldset class="contactForm whiteBackground">
-                            <label for="nombre" class="formLabel">Nombre y Apellido: </label>
-                            <input type="text" class="formInput" />
-                            <label for="email" class="formLabel">Email: </label>
-                            <input type="email" name="email" class="formInput" />
-                            <label for="mensaje" class="formLabel">Dejanos tu mensaje: </label>
-                            <textarea name="mensaje" placeholder="Escribe aqui..." class="formTextarea"></textarea></label>
-                            <input type="submit" value="Enviar" class="formButton" />
-                        </fieldset>
-                    </form>
-                </article>
-                <article class="contactInfo whiteBackground">
-                    <h3 class="contactInfoTitle">Información de contacto</h3>
-                    <div class="contactInfoRow">
-                        <img src="../images/telephone.svg" alt="Icono Telefono" class="icon">
-                        <p>+11 2643 777</p>
-                    </div>
-                    <div class="contactInfoRow">
-                        <img src="../images/email.svg" alt="Icono Email" class="icon">
-                        <p>contacto@carpooleo.com</p>
-                    </div>
-                    <div class="contactInfoRow">
-                        <img src="../images/location.svg" alt="Icono Ubicacion" class="icon">
-                        <p>Av. Pueyrredon y Av. Santa Fe, CABA, Argentina</p>
-                    </div>
-                    <div class="contactInfoRow">
-                        <a href=""><img src="../images/instagram.svg" alt="Instagram" class="icon"></a>
-                        <a href=""><img src="../images/youtube.svg" alt="YouTube" class="icon" /></a>
-                        <a href=""><img src="../images/twitter.svg" alt="Twitter" class="icon" /></a>
-                    </div>
-                </article>
-            </section>
+			<article class="contactInfo whiteBackground">
+				<h3 class="contactInfoTitle">Información de contacto</h3>
+				<div class="contactInfoRow">
+					<img
+						src="../images/telephone.svg"
+						alt="Icono Telefono"
+						class="icon"
+					/>
+					<p>+11 2643 777</p>
+				</div>
+				<div class="contactInfoRow">
+					<img
+						src="../images/email.svg"
+						alt="Icono Email"
+						class="icon"
+					/>
+					<p>contacto@carpooleo.com</p>
+				</div>
+				<div class="contactInfoRow">
+					<img
+						src="../images/location.svg"
+						alt="Icono Ubicacion"
+						class="icon"
+					/>
+					<p>Av. Pueyrredon y Av. Santa Fe, CABA, Argentina</p>
+				</div>
+				<div class="contactInfoRow socials">
+					<a href=""
+						><img
+							src="../images/instagram.svg"
+							alt="Instagram"
+							class="icon"
+					/></a>
+					<a href=""
+						><img
+							src="../images/youtube.svg"
+							alt="YouTube"
+							class="icon"
+					/></a>
+					<a href=""
+						><img
+							src="../images/twitter.svg"
+							alt="Twitter"
+							class="icon"
+					/></a>
+				</div>
+			</article>
+		</section>
 
-            <section class="mapSection">
-                <h3>Vení visitá nuestras oficianas</h3>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.3855016182447!2d-58.404556984770494!3d-34.5944121804619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca908d89b80f%3A0xdd304872ef2d09e0!2sAv.%20Santa%20Fe%20%26%20Av.%20Pueyrred%C3%B3n%2C%20C1015%20CABA!5e0!3m2!1sen!2sar!4v1649209608239!5m2!1sen!2sar" class="iframe"></iframe>
-            </section>
+		<section class="mapSection">
+			<h3>Vení visitá nuestras oficianas</h3>
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.3855016182447!2d-58.404556984770494!3d-34.5944121804619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca908d89b80f%3A0xdd304872ef2d09e0!2sAv.%20Santa%20Fe%20%26%20Av.%20Pueyrred%C3%B3n%2C%20C1015%20CABA!5e0!3m2!1sen!2sar!4v1649209608239!5m2!1sen!2sar"
+				class="iframe"
+			></iframe>
+		</section>
 
-        <!-- Pie de pagina -->
-        <footer>
-            <article>
-                <a href=""><img src="../images/instagram.svg" alt="Instagram" class="icon whiteSvg"></a>
-                <a href=""><img src="../images/youtube.svg" alt="YouTube" class="icon whiteSvg" /></a>
-                <a href=""><img src="../images/twitter.svg" alt="Twitter" class="icon whiteSvg" /></a>
-            </article>
+		<!-- Footer -->
+		<footer>
+			<article>
+				<a href=""
+					><img
+						src="../images/instagram.svg"
+						alt="Instagram"
+						class="icon whiteSvg"
+				/></a>
+				<a href=""
+					><img
+						src="../images/youtube.svg"
+						alt="YouTube"
+						class="icon whiteSvg"
+				/></a>
+				<a href=""
+					><img
+						src="../images/twitter.svg"
+						alt="Twitter"
+						class="icon whiteSvg"
+				/></a>
+			</article>
 
-            <section>
-                <ul class="footerLinks">
-                    <li><a href="sobreNosotros.html">Sobre Nosotros</a></li>
-                    <li><a href="producto.html">Producto</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </section>
-            <section class="newsletter">
-                <p>Suscribite a nuestro Newsletter</p>
-                <input type="email" placeholder="Email..." />
-                <button>Suscribite</button>
-            </section>
-            <section class="downloads">
-                <article>
-                    <p>Descarga la app</p>
-                    <a href=""><img src="../images/googlePlay.svg" alt="" class="downloadApp" /></a>
-                    <a href=""><img src="../images/AppStore.svg" alt="" class="downloadApp" /></a>
-                </article>
-            </section>
-        </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-</body>
-
+			<section>
+				<ul class="footerLinks">
+					<li><a href="sobreNosotros.html">Sobre Nosotros</a></li>
+					<li><a href="producto.html">Producto</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</section>
+			<section class="newsletter">
+				<p>Suscribite a nuestro Newsletter</p>
+				<input type="email" placeholder="Email..." />
+				<button>Suscribite</button>
+			</section>
+			<section class="downloads">
+				<article>
+					<p>Descarga la app</p>
+					<a href=""
+						><img
+							src="../images/googlePlay.svg"
+							alt=""
+							class="downloadApp"
+					/></a>
+					<a href=""
+						><img
+							src="../images/AppStore.svg"
+							alt=""
+							class="downloadApp"
+					/></a>
+				</article>
+			</section>
+		</footer>
+		<!-- Bootstrap Script -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>

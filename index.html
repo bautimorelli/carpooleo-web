@@ -1,126 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- AOS Framework Stylesheet -->
+		<link
+			href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+			rel="stylesheet"
+		/>
+		<!-- Bootstrap Stylesheet -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/styles.css" />
+		<title>Carpooleo</title>
+		<link rel="shortcut icon" href="images/logo.png" />
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+	<body>
+		<!-- Navbar with Collapsable -->
+		<header class="sticky-top">
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="index.html"
+						><img
+							src="images/logoCarpooleo.svg"
+							alt="logo"
+							class="logo whiteSvg"
+					/></a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarToggler"
+						aria-controls="navbarTogglerDemo02"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarToggler">
+						<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+							<li class="nav-item ms-4">
+								<a
+									class="nav-link"
+									aria-current="page"
+									href="index.html"
+									>Inicio</a
+								>
+							</li>
+							<li class="nav-item ms-4">
+								<a
+									class="nav-link"
+									href="pages/sobreNosotros.html"
+									>Sobre Nosotros</a
+								>
+							</li>
+							<li class="nav-item ms-4">
+								<a class="nav-link" href="pages/producto.html"
+									>Producto</a
+								>
+							</li>
+							<li class="nav-item ms-4">
+								<a class="nav-link" href="pages/blog.html"
+									>Blog</a
+								>
+							</li>
+							<li class="nav-item ms-4">
+								<a class="nav-link" href="pages/contacto.html"
+									>Contacto</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
 
-    <title>Carpooleo</title>
-    <link rel="shortcut icon" href="images/logo.png">
-</head>
+		<!-- Content -->
+		<section class="bannerSection purpleBackground">
+			<article class="bannerArticle">
+				<h2 class="bannerTitle">Una app para facilitar viajes</h2>
+				<p class="bannerText">
+					¿Buscas alguien con quien dividir costos de viaje?
+				</p>
+				<div class="bannerButtons">
+					<a href="pages/sobreNosotros.html"
+						><button class="bannerButtonPrimary">Descargar App</button></a
+					>
+					<a href="pages/producto.html"
+						><button class="bannerButtonSecondary">Leer mas</button></a
+					>
+				</div>
+			</article>
+			<img
+				src="images/appPreview.png"
+				alt="App Preview"
+				class="imgBannerIndex"
+				data-aos="flip-left"
+				data-aos-duration="1000"
+			/>
+		</section>
 
-<body>
-    <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="images/logoCarpooleo.svg" alt="logo" class="logo whiteSvg"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarToggler">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item ms-4">
-                    <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item ms-4">
-                    <a class="nav-link" href="pages/sobreNosotros.html">Sobre Nosotros</a>
-                    </li>
-                    <li class="nav-item ms-4">
-                    <a class="nav-link" href="pages/producto.html">Producto</a>
-                    </li>
-                    <li class="nav-item ms-4">
-                    <a class="nav-link" href="pages/blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item ms-4">
-                    <a class="nav-link" href="pages/contacto.html">Contacto</a>
-                    </li>
-                </ul>
-                </div>
-            </div>
-            </nav>
-    </header>
+		<section class="cardsSection">
+			<article
+				class="cardsArticleCard"
+				data-aos="zoom-in-up"
+				data-aos-delay="200"
+				data-aos-duration="1500"
+			>
+				<img
+					src="images/cliente.jpeg"
+					alt="imagen cliente"
+					class="imgClient"
+				/>
+				<p class="cardText">
+					"Mas rapido y mas barato que viajar en colectivo, super recomendado!"
+				</p>
+				<p class="cardFooter">Bautista Morelli - 24 años</p>
+			</article>
+			<article
+				class="cardsArticleCard"
+				data-aos="zoom-in-up"
+				data-aos-delay="200"
+				data-aos-duration="1500"
+			>
+				<img
+					src="images/cliente3.JPG"
+					alt="imagen cliente"
+					class="imgClient"
+				/>
+				<p class="cardText">
+					"Tenia que viajar de emergencia y no conseguia transporte, por suerte encontre esta app y me soluciono todo"
+				</p>
+				<p class="cardFooter">Lucas Perretta - 58 años</p>
+			</article>
+			<article
+				class="cardsArticleCard"
+				data-aos="zoom-in-up"
+				data-aos-delay="200"
+				data-aos-duration="1500"
+			>
+				<img
+					src="images/cliente2.jpg"
+					alt="imagen cliente"
+					class="imgClient"
+				/>
+				<p class="cardText">
+					"Viajo continuamente por trabajo y siempre voy con lugar en el auto, perfecto para alivianar costos"
+				</p>
+				<p class="cardFooter">Mateo Perez - 32 años</p>
+			</article>
+		</section>
 
-        <!-- Contenido -->
-            <section class="bannerSection purpleBackground">
-                <article class="bannerArticle">
-                    <h2 class="bannerTitle">Una app para facilitar viajes</h2>
-                    <p class="bannerText">¿Buscas alguien con quien dividir costos de viaje?</p>
-                    <div class="bannerButtons">
-                        <a href="pages/sobreNosotros.html"><button class="bannerButton">Leer Mas</button></a>
-                        <a href="pages/producto.html"><button class="bannerButton">Descargar App</button></a>
-                    </div>
-                </article>
-                <img src="images/appPreview.png" alt="App Preview" class="imgBannerIndex" data-aos="flip-left" data-aos-duration="1000">
-            </section>
+		<section class="textSection">
+			<h2 class="textSectionTitle">
+				Usa Carpooleo para encontrar esa persona que viaja a tu mismo
+				destino y ahorra costos
+			</h2>
+		</section>
 
+		<!-- Footer -->
+		<footer>
+			<article>
+				<a href=""
+					><img
+						src="images/instagram.svg"
+						alt="Instagram"
+						class="icon whiteSvg"
+				/></a>
+				<a href=""
+					><img
+						src="images/youtube.svg"
+						alt="YouTube"
+						class="icon whiteSvg"
+				/></a>
+				<a href=""
+					><img
+						src="images/twitter.svg"
+						alt="Twitter"
+						class="icon whiteSvg"
+				/></a>
+			</article>
+			<section>
+				<ul class="footerLinks">
+					<li>
+						<a href="pages/sobreNosotros.html">Sobre Nosotros</a>
+					</li>
+					<li><a href="pages/producto.html">Producto</a></li>
+					<li><a href="pages/blog.html">Blog</a></li>
+					<li><a href="pages/contacto.html">Contacto</a></li>
+				</ul>
+			</section>
+			<section class="newsletter">
+				<p>Suscribite a nuestro Newsletter</p>
+				<input type="email" placeholder="Email..." />
+				<button>Suscribite</button>
+			</section>
+			<section class="downloads">
+				<article>
+					<p>Descarga la app</p>
+					<a href=""
+						><img
+							src="images/googlePlay.svg"
+							alt=""
+							class="downloadApp"
+					/></a>
+					<a href=""
+						><img
+							src="images/AppStore.svg"
+							alt=""
+							class="downloadApp"
+					/></a>
+				</article>
+			</section>
+		</footer>
 
-            <section class="cardsSection" >
-                <article class="cardsArticleCard" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="1500">
-                    <img src="images/cliente.jpeg" alt="imagen cliente" class="imgClient">
-                    <p class="cardText">"Aliquam efficitur dui a arcu lobortis tempor. Nunc pretium nulla augue sit amet
-                        varius porro."</p>
-                    <p class="cardFooter">Bautista Morelli - 24 años</p>
-                </article>
-                <article class="cardsArticleCard" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="1500">
-                    <img src="images/cliente.jpeg" alt="imagen cliente" class="imgClient">
-                    <p class="cardText">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
-                        adipisci"</p>
-                    <p class="cardFooter">Bautista Morelli - 24 años</p>
-                </article>
-                <article class="cardsArticleCard" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="1500">
-                    <img src="images/cliente.jpeg" alt="imagen cliente" class="imgClient">
-                    <p class="cardText">"Nullam vitae tempus dolor. Aliquam feugiat vulputate varius. Suspendisse
-                        tincidunt lorem non"</p>
-                    <p class="cardFooter">Bautista Morelli - 24 años</p>
-                </article>
-            </section>
-
-            <section class="textSection">
-                <h2 class="textSectionTitle">Usa Carpooleo para encontrar esa persona que viaja a tu mismo destino y
-                    ahorra costos</h2>
-            </section>
-
-        <!-- Pie de pagina -->
-        <footer>
-            <article>
-                <a href=""><img src="images/instagram.svg" alt="Instagram" class="icon whiteSvg"></a>
-                <a href=""><img src="images/youtube.svg" alt="YouTube" class="icon whiteSvg"></a>
-                <a href=""><img src="images/twitter.svg" alt="Twitter" class="icon whiteSvg"></a>
-            </article>
-
-            <section>
-                <ul class="footerLinks">
-                    <li><a href="pages/sobreNosotros.html">Sobre Nosotros</a></li>
-                    <li><a href="pages/producto.html">Producto</a></li>
-                    <li><a href="pages/blog.html">Blog</a></li>
-                    <li><a href="pages/contacto.html">Contacto</a></li>
-                </ul>
-            </section>
-            <section class="newsletter">
-                <p>Suscribite a nuestro Newsletter</p>
-                <input type="email" placeholder="Email...">
-                <button>Suscribite</button>
-            </section>
-            <section class="downloads">
-                <article>
-                    <p>Descarga la app</p>
-                    <a href=""><img src="images/googlePlay.svg" alt="" class="downloadApp"></a>
-                    <a href=""><img src="images/AppStore.svg" alt="" class="downloadApp"></a>
-                </article>
-            </section>
-        </footer>
-
-        <!-- Animation & Bootstrap Script -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script>
-        AOS.init();
-    </script>
-
-</body>
-
+		<!-- Animation & Bootstrap Script -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"
+		></script>
+		<script>
+			AOS.init();
+		</script>
+	</body>
 </html>
