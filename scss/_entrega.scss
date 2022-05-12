@@ -1,0 +1,64 @@
+//Mapa
+
+$estilos: (
+    backgroundColor: blueviolet,
+    textColor: white,
+    textPadding: 10px,
+    flexDisplay:flex
+);
+
+footer {
+    background-color: map-get($estilos, backgroundColor);
+    color: map-get($map: estilos, $key: textColor);
+    padding: map-get($map: estilos, $key: textPadding);
+    display: map-get($map: estilos, $key: flexDisplay);
+}
+
+//Mixin
+
+@mixin image ($width, $margin) {
+    width: $width;
+    margin: $margin;
+}
+
+.imgBannerIndex{
+    @include image(280px,30px 0);
+}
+
+.productImage {
+    @include image(350px,20px 0 0 0);
+}
+
+.imgSobreNosotros {
+    @include image(100%, 0);
+}
+
+.imgCliente {
+    @include image(125px, 0);
+    height: 125px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+//Entend
+
+.icon {
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+}
+
+.iconInstagram{
+    @extend .icon;
+    filter: invert(40%) sepia(67%) saturate(4546%) hue-rotate(319deg) brightness(88%) contrast(100%)
+}
+
+.iconYoutube{
+    @extend .icon;
+    filter: invert(15%) sepia(91%) saturate(7485%) hue-rotate(359deg) brightness(102%) contrast(112%);
+}
+
+.iconTwitter{
+    @extend .icon;
+    filter: invert(61%) sepia(22%) saturate(5300%) hue-rotate(159deg) brightness(89%) contrast(113%);
+}
