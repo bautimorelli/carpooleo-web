@@ -101,11 +101,19 @@ footer {
   padding: 10px;
   flex-wrap: wrap; }
 
-.footerLinks li {
-  margin: 5px 0;
-  font-size: 1rem;
-  color: white;
-  text-decoration: none; }
+.footerLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 15px 0;
+  padding: 0; }
+  .footerLinks li {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none; }
 
 .newsletter {
   font-size: 1.2rem; }
@@ -373,6 +381,27 @@ footer {
 .imgSobreNosotros {
   width: 100%;
   max-width: 600px; }
+
+.container404 {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 30px; }
+  .container404 h2 {
+    font-size: 3rem;
+    margin: 15px 5px; }
+  .container404 p {
+    margin: 15px 5px 30px 5px;
+    font-size: 1.2rem; }
+
+.titulo404 {
+  width: 100%;
+  height: 100%;
+  font-size: 100px;
+  font-weight: bolder;
+  mix-blend-mode: screen; }
 
 @media screen and (min-width: 0px) and (max-width: 400px) {
   .cardsArticleCard {
