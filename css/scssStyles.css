@@ -65,7 +65,8 @@ p {
 
 h3 {
   font-size: 1.6rem;
-  margin: 10px 0; }
+  margin: 10px 0;
+  color: #8A2BE2; }
 
 header {
   background-color: #8A2BE2;
@@ -203,7 +204,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 20px 10%; }
+  margin: 50px 10%; }
 
 .blogTitle {
   font-size: 4rem;
@@ -382,15 +383,19 @@ footer {
   width: 100%;
   max-width: 600px; }
 
+.img404 {
+  width: 100%;
+  max-width: 500px;
+  margin: 10px; }
+
 .container404 {
-  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0px 30px; }
   .container404 h2 {
-    font-size: 3rem;
+    font-size: 2.7rem;
     margin: 15px 5px; }
   .container404 p {
     margin: 15px 5px 30px 5px;
@@ -402,6 +407,9 @@ footer {
   font-size: 100px;
   font-weight: bolder;
   mix-blend-mode: screen; }
+
+.marginButton404 {
+  margin: 0 0 50px; }
 
 @media screen and (min-width: 0px) and (max-width: 400px) {
   .cardsArticleCard {
