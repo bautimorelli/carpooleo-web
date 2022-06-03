@@ -7,7 +7,8 @@ web de una aplicacion que conceptualize en mi tiempo libre, una aplicacion de ca
 llamada Carpooleo. Si bien nunca desarrolle la aplicacion decidi simular en el sitio
 como si ya estuviera disponible para Android e IOS
 
-Demo: https://carpooleo.000webhostapp.com/
+Demo en hosteo propio con 404: https://carpooleo.000webhostapp.com/
+Demo alternativo github pages: https://bautimorelli.github.io/coderhouse-morelli/
 
 ## Puntos a destacar
 
