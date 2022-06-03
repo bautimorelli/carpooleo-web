@@ -3,7 +3,6 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .bannerArticle {
@@ -12,21 +11,21 @@
     justify-content: space-between;
     align-items: center;
     color: white;
-    margin-bottom: 20px;
-    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-top: 30px;
     max-width: 800px;
 }
 
 .bannerTitle {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     font-weight: bold;
-    margin: 0 5px 10px;
+    margin: 0 15px 10px;
     text-align: center;
 }
 
 .bannerText {
-    font-size: 2rem;
-    margin: 10px 5px 30px;
+    font-size: 1.8rem;
+    margin: 10px 15px 30px;
     text-align: center;
 }
 
@@ -49,6 +48,13 @@
     height: 55px;
     width: 200px;
     font-weight: bold;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+        background-color: white;
+        color: black;
+        transform: translateY(-2px);
+    }
 }
 
 .bannerButtonSecondary {
@@ -61,4 +67,11 @@
     height: 55px;
     width: 200px;
     font-weight: bold;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+        background-color: white;
+        color: black;
+        transform: translateY(-2px);
+    }
 }

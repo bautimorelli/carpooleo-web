@@ -34,6 +34,9 @@ p {
   height: 25px;
   margin: 10px; }
 
+.flexWrap {
+  flex-wrap: wrap; }
+
 .reverseWrap {
   flex-wrap: wrap-reverse; }
 
@@ -146,8 +149,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap; }
+  align-items: center; }
 
 .bannerArticle {
   display: flex;
@@ -155,19 +157,19 @@ footer {
   justify-content: space-between;
   align-items: center;
   color: white;
-  margin-bottom: 20px;
-  margin-top: 80px;
+  margin-bottom: 30px;
+  margin-top: 30px;
   max-width: 800px; }
 
 .bannerTitle {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   font-weight: bold;
-  margin: 0 5px 10px;
+  margin: 0 15px 10px;
   text-align: center; }
 
 .bannerText {
-  font-size: 2rem;
-  margin: 10px 5px 30px;
+  font-size: 1.8rem;
+  margin: 10px 15px 30px;
   text-align: center; }
 
 .bannerButtons {
@@ -187,7 +189,12 @@ footer {
   font-size: 1.2rem;
   height: 55px;
   width: 200px;
-  font-weight: bold; }
+  font-weight: bold;
+  transition: all 0.3s ease 0s; }
+  .bannerButtonPrimary:hover {
+    background-color: white;
+    color: black;
+    transform: translateY(-2px); }
 
 .bannerButtonSecondary {
   background-color: #8A2BE2;
@@ -198,7 +205,12 @@ footer {
   font-size: 1.2rem;
   height: 55px;
   width: 200px;
-  font-weight: bold; }
+  font-weight: bold;
+  transition: all 0.3s ease 0s; }
+  .bannerButtonSecondary:hover {
+    background-color: white;
+    color: black;
+    transform: translateY(-2px); }
 
 .blogSection {
   display: flex;
@@ -393,7 +405,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0px 30px; }
+  margin: 0px 30px;
+  min-height: 80vh; }
   .container404 h2 {
     font-size: 2.7rem;
     margin: 15px 5px; }
@@ -421,4 +434,8 @@ footer {
   .contactInfo {
     width: 280px; }
   .iframe {
-    width: 360px; } }
+    width: 360px; }
+  .blogTitle {
+    font-size: 3.6rem; }
+  header {
+    padding: 0; } }
