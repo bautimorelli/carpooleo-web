@@ -11,6 +11,12 @@
 a{
     color: white;
     text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: rgb(207, 207, 207);
 }
 
 html {
