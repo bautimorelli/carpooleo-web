@@ -1,19 +1,19 @@
 
 @media screen and (min-width: 0px) and (max-width: 400px){
     .cardsArticleCard {
-        margin: 40px 10px 20px;
+        margin: 40px 30px 20px;
     }
 
     .imgSobreNosotros {
-        width: 380px;
+        width: 350px;
     }
 
     .contactForm {
-        width: 280px;
+        width: 300px;
     }
 
     .contactInfo {
-        width: 280px;
+        width: 300px;
     }
 
     .iframe {
@@ -26,5 +26,17 @@
 
     header {
         padding: 0;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 550px){
+    .contactForm {
+        width: 330px;
+        height: 450px;
+    }
+
+    .contactInfo {
+        width: 330px;
+        height: 450px;
     }
 }

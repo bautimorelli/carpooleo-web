@@ -9,12 +9,14 @@
 .contactForm {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: flex-start;
     padding: 30px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 15px;
-    width: 400px;
-    margin: 20px 0;
+    width: 500px;
+    height: 500px;
+    margin: 20px 10px;
 }
 
 .formLabel {

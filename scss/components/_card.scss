@@ -9,7 +9,7 @@
 .cardsArticleCard {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     min-width: 300px;
     width: 350px;
@@ -21,6 +21,12 @@
     margin: 50px 30px;
     box-shadow: -1px 2px 4px 1px #CECECE;
     background-color: white;
+    transition: all 0.3s ease-out 0s;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
 }
 
 .cardText {

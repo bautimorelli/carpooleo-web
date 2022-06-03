@@ -145,6 +145,33 @@ footer {
   margin: 0 0 15px 0;
   font-weight: 400; }
 
+.imgClient {
+  vertical-align: middle;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%; }
+
+.imgBannerIndex {
+  width: 280px;
+  margin: 30px 0; }
+
+.productImage {
+  width: 350px;
+  margin-top: 20px; }
+
+.productDownload {
+  height: 70px;
+  margin: 15px; }
+
+.imgSobreNosotros {
+  width: 100%;
+  max-width: 600px; }
+
+.img404 {
+  width: 100%;
+  max-width: 500px;
+  margin: 10px; }
+
 .bannerSection {
   display: flex;
   flex-direction: row;
@@ -245,7 +272,7 @@ footer {
 .cardsArticleCard {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   min-width: 300px;
   width: 350px;
@@ -256,7 +283,11 @@ footer {
   text-align: center;
   margin: 50px 30px;
   box-shadow: -1px 2px 4px 1px #CECECE;
-  background-color: white; }
+  background-color: white;
+  transition: all 0.3s ease-out 0s; }
+  .cardsArticleCard:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; }
 
 .cardText {
   font-size: 1.6rem; }
@@ -272,10 +303,11 @@ footer {
   align-items: flex-start;
   padding: 30px;
   margin: 20px 0;
-  width: 400px;
-  height: 428px;
+  width: 500px;
+  height: 500px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border-radius: 15px; }
+  border-radius: 15px;
+  margin: 10px; }
 
 .contactInfoTitle {
   align-self: center;
@@ -300,12 +332,14 @@ footer {
 .contactForm {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: flex-start;
   padding: 30px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 15px;
-  width: 400px;
-  margin: 20px 0; }
+  width: 500px;
+  height: 500px;
+  margin: 20px 10px; }
 
 .formLabel {
   font-size: 1.2rem;
@@ -373,33 +407,6 @@ footer {
   font-size: 1.2rem;
   font-weight: lighter; }
 
-.imgClient {
-  vertical-align: middle;
-  width: 125px;
-  height: 125px;
-  border-radius: 50%; }
-
-.imgBannerIndex {
-  width: 280px;
-  margin: 30px 0; }
-
-.productImage {
-  width: 350px;
-  margin-top: 20px; }
-
-.productDownload {
-  height: 70px;
-  margin: 15px; }
-
-.imgSobreNosotros {
-  width: 100%;
-  max-width: 600px; }
-
-.img404 {
-  width: 100%;
-  max-width: 500px;
-  margin: 10px; }
-
 .container404 {
   display: flex;
   flex-direction: column;
@@ -426,16 +433,24 @@ footer {
 
 @media screen and (min-width: 0px) and (max-width: 400px) {
   .cardsArticleCard {
-    margin: 40px 10px 20px; }
+    margin: 40px 30px 20px; }
   .imgSobreNosotros {
-    width: 380px; }
+    width: 350px; }
   .contactForm {
-    width: 280px; }
+    width: 300px; }
   .contactInfo {
-    width: 280px; }
+    width: 300px; }
   .iframe {
     width: 360px; }
   .blogTitle {
     font-size: 3.6rem; }
   header {
     padding: 0; } }
+
+@media screen and (min-width: 0px) and (max-width: 550px) {
+  .contactForm {
+    width: 330px;
+    height: 450px; }
+  .contactInfo {
+    width: 330px;
+    height: 450px; } }
