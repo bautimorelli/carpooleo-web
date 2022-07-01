@@ -8,7 +8,7 @@ llamada Carpooleo. Si bien nunca desarrolle la aplicacion decidi simular en el s
 como si ya estuviera disponible para Android e IOS
 
 Demo en hosteo propio con 404: https://carpooleo.000webhostapp.com/
-Demo alternativo github pages: https://bautimorelli.github.io/coderhouse-morelli/
+Demo alternativo github pages: https://bautimorelli.github.io/carpooleo-web/
 
 ## Puntos a destacar
 
